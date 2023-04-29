@@ -1,0 +1,253 @@
+/* 
+
+=== FoodGo Lab ===
+
+Do not delete existing CSS
+
+*/
+
+/* == Typography == */
+
+body {
+    font-family: 'Helvetica', 'Arial', sans-serif;
+    font-size: 1rem;    
+    /*
+    base text size: 14pt
+    average person default text size(context)=14pts
+    1rem=14pt/14pts
+    */
+
+    line-height: 1.29rem;
+    /*
+    base text height: 18pt
+    average person default text size(context)=14pts
+    1.29rem=18pt/14pts
+    */
+}
+
+h2 {
+    font-size: 2.14pt;
+    /*
+    base text size: 30pt
+    average person default text size(context)=14pts
+    2.14rem=30pt/14pts
+    */
+}
+
+header,
+footer {
+    color: #b56441;
+}
+
+a {
+    text-decoration: none;
+    color: #b56441;
+    font-size: 1rem;
+}
+
+#legal {
+    font-size: 0.714rem;
+    /*
+    base text size: 10pt
+    average person default text size(context)=14pts
+    0.714rem=10pt/14pts
+    */
+    font-style: italic;
+}
+
+#nav a {
+    margin-right: 0.536rem;
+    /*
+    10px --> 10px(3/4)/14pt=0.536rem
+    */
+}
+
+#nav a:hover {
+    color: #7d4700;
+}
+
+#splash {
+    text-align: center;
+    font-size: 3.43rem;
+    /*
+    base text size: 48pt
+    average person default text size(context)=14pts
+    3.43rem=48pt/14pts
+    */
+    line-height: 4.29rem;
+    /*
+    base text height: 60pt
+    average person default text size(context)=14pts
+    4.29rem=60pt/14pts
+    */
+    color: white;
+    text-shadow: 0rem 0rem 0.268rem #6e6e6e;
+    /*
+    0px --> 0px(3/4)/14pt=0rem
+    5px --> 5px(3/4)/14pt=0.268rem
+    */
+}
+
+
+footer {
+    font-style: italic;
+}
+
+/* Font Awesome icons */
+.fab {
+    font-size: 2.14rem;
+    /*
+    base text size: 30pt
+    average person default text size(context)=14pts
+    2.14rem=30pt/14pts
+    */
+    margin-right: 0.536rem;
+    /*
+    10px --> 10px(3/4)/14pt=0.536rem
+    */
+}
+
+.fab:hover {
+    color: #fcd303;
+}
+/*
+button {}*/
+
+/* == Background == */
+
+
+body {
+    background-color: #fcd303;
+}
+
+main {
+    background-color: #ffdd80;
+}
+
+#splash {
+    background-image: url(splash-backing.jpg);
+}
+
+/* == Box Model == */
+
+body {
+    margin: 0rem;
+    padding: 0rem;
+    /*
+    0px --> 0px(3/4)/14pt=0rem
+    */
+}
+
+footer {
+    padding: 0.536rem;
+    /*
+    10px --> 10px(3/4)/14pt=0.536rem
+    */
+}
+
+header {
+    align-items: end;
+    padding: 1.07rem;
+    /*
+    20px --> 20px(3/4)/14pt=1.07rem
+    */
+}
+
+button {
+    border: 0;
+    background-color: #b56441;
+    color: #fff;
+    padding: 1.07rem;
+    /*
+    20px --> 20px(3/4)/14pt=1.07rem
+    */
+    font-size: 2.14rem;
+    /*
+    base text size: 30pt
+    average person default text size(context)=14pts
+    2.14rem=30pt/14pts
+    */
+    margin-top: 0.804rem;
+    /*
+    15px --> 15px(3/4)/14pt=0.804rem
+    */
+}
+
+footer {
+    padding-top: 2.68rem;
+    /*
+    50px --> 50px(3/4)/14pt=2.68rem
+    */
+}
+
+#splash {
+    height: 21.4rem;
+    /*
+    400px --> 400px(3/4)/14pt=21.4rem
+    */
+}
+
+#app {
+    height: 10.7rem;
+    /*
+    200px --> 200px(3/4)/14pt=10.7rem
+    */
+}
+
+#mobile-menu {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+}
+
+/* === Layout  === */
+
+
+/* = Grid =*/
+header,
+footer {
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+main {
+    display: grid;
+    grid-template-columns: 33.33% 33.33% 33.33%;
+}
+
+#app {
+    grid-column-start: 1;
+    grid-column-end: 4;
+}
+
+#splash {
+    grid-column-start: 1;
+    grid-column-end: 4;
+}
+
+/* = Flexbox = */
+
+#app,
+#splash {
+    display: flex;
+}
+
+#app,
+#splash {
+    align-items: center;
+    justify-content: center;
+}
+
+/* = Other = */
+
+* {
+    box-sizing: border-box;
+}
+
+#social-media {
+    text-align: right;
+}
+
+#app {
+    text-align: center;
+}
